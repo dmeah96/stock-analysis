@@ -1,0 +1,17 @@
+#Overview of Project:#
+##A code was written to quickly pull stock data from 2018 and 2017 and analyze their losses or gain through the time period in a matter of seconds. ##
+#Results:#
+##With the exception of RUN and ENPH all stocks did worse in 2018. 2018 took a few miliseconds longer to analyze by code.    startTime = Timer
+    
+    'Format the output sheet on All Stocks Analysis worksheet
+    Worksheets("All Stocks Analysis").Activate
+    
+    Range("A1").Value = "All Stocks (" + yearValue + ")"
+    
+    'Create a header row
+    Cells(3, 1).Value = "Ticker"
+    Cells(3, 2).Value = "Total Daily Volume"
+    Cells(3, 3).Value = "Return"##
+#Summary:#
+
+##The advantages of the refactoring code are the speed increases. However, the disadvantage is is that is that is the speed is insignificant. Miliseconds are too fast to make a difference to the human mind. It would be easier to stick to the original format for the few miliseconds saved.##
